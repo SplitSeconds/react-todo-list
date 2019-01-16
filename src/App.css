@@ -30,3 +30,13 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style-type: none;
+}
+.normal{
+  text-decoration: none;
+}
+.strikeThrough{
+  text-decoration: line-through;
+}
