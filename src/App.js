@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NormalAll from './Components/NormalAll'
-import HooksAll from './Components/HooksAll'
+import HooksAll from './Components/HooksAll_Hooks'
 
 class App extends Component {
   render() {

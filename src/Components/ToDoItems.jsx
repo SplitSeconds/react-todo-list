@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
 
 class TodoItems extends Component {
+  
   createTasks = item => {
+    
+    let listItem = this.props.isStrikeThrough 
     return (
-      <li key={item.key} onClick={() => 
-       
+      <li key={item.key} className={listItem} onClick={() => 
+        
         setTimeout(() => {
-          this.props.deleteItem(item.key)
-        }, 5000)}
-      >
-        {item.text}
-      </li>
+          this.props.onClick()
+          //this.props.deleteItem(item.key)
+        }, 1000)}
+    >
+      {item.text}
+    </li>
     )
   }
   render() {

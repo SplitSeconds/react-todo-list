@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
 class TodoForm extends Component {
-  // componentDidUpdate() {
-  //   this.props.inputElement.current.focus()
-  // }
+
   render() {
     return (
       <div className="todoListMain">
