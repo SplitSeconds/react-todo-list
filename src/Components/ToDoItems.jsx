@@ -6,15 +6,17 @@ class TodoItems extends Component {
     
     let listItem = this.props.isStrikeThrough 
     return (
-      <li key={item.key} className={listItem} onClick={() => 
-        
+      <li 
+      key={item.key} 
+      className={listItem} 
+      // style={{textDecoration: this.props.isStrikeThrough ? 'line-through' : 'none',}} 
+      onClick={() => 
         setTimeout(() => {
-          this.props.onClick()
-          //this.props.deleteItem(item.key)
+          this.props.deleteItem(item.key)
         }, 1000)}
-    >
-      {item.text}
-    </li>
+      >
+        {item.text}
+      </li>
     )
   }
   render() {

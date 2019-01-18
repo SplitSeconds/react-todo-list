@@ -39,7 +39,8 @@ class NormalAll extends Component {
       items: filteredItems,
     })
   }
-  onClick = key => {
+  onClick = e => {
+    e.preventDefault()
     console.log("Click")
     this.setState({
       isStrikeThrough: !this.state.isStrikeThrough
@@ -48,7 +49,6 @@ class NormalAll extends Component {
   }
   
   render() {
-    //let listItem = this.state.isStrikeThrough ? "normal" : "strikeThrough";
     return (
       <div className="Normal">
         <TodoForm
